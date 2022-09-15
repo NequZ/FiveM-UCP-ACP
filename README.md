@@ -43,11 +43,11 @@ import the cp_user SQL file
    - Create new users
    
 3. User
-   - Viewing users
-   - Edit users ( name, first name, inventory etc )
-   - Possibility to modify database entries ( whitelist & ban )
+   - [ ] Viewing users
+   - [ ] Edit users ( name, first name, inventory etc )
+   - [ ] Possibility to modify database entries ( whitelist & ban )
    
 4. Other things
-   - News system ( writing news and viewing news
-   - Log system for reviewing
-   - Frontend Updates ( I am so bad with that stuff :D )
+   - [ ] News system ( writing news and viewing news
+   - [ ] Log system for reviewing
+   - [ ] Frontend Updates ( I am so bad with that stuff :D )
