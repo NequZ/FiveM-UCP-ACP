@@ -32,7 +32,7 @@ if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administr
 <ul class="menu">
     <li class="menu_list">
         <span class="front fa fa fa-user-plus"></span>
-        <a href="#" class="side">New Staff</a>
+        <a href="newadmin.php" class="side">New Staff</a>
     </li>
     <li class="menu_list">
         <span class="front fa fa-users"></span>
