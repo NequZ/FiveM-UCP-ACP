@@ -40,7 +40,11 @@ import the cp_user SQL file
 2. Administration
    - [x] Viewing team members
    - [x] Management of team members ( name change, role change)
-   - [ ] Create new users
+   - [x] Create new Team Members
+   - [ ] Delete Team Members
+   - [ ] Write News
+   - [ ] Rolecheck, just a specific group is able to " Manage specific groups"
+   - [ ] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
 3. User
    - [ ] Viewing users
