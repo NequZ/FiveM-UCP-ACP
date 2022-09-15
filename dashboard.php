@@ -45,9 +45,12 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
         <span class="front fas fa fa-times"></span>
         <a href="logout.php" class="side">Logout</a>
     </li>
-</ul>
-
- <?php
+    <?php if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') {
+    echo '<li class="menu_list">
+        <span class="front fa fa-file-archive-o"></span>
+        <a href="admin/log.php" class="side">Logfiles</a>
+</ul>';
+    }
     $query = $db->prepare("SELECT * FROM user");
     $query->execute();
     $result = $query->fetch(PDO::FETCH_ASSOC);
