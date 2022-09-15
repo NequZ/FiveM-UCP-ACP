@@ -31,15 +31,15 @@ import the cp_user SQL file
 #What should be possible with the ACP?
 
 1. General
-   - Login and logout function of users
-   -  Login and logout function of users
-   - Different ranks like administrator and super administrator
-   - Security for logins without rights
-   - Constant polling of session variables so that no user gets rights he does not have
+   - [x] Login and logout function of users
+   - [x] Login and logout function of users
+   - [x] Different ranks like administrator and super administrator
+   - [x] Security for logins without rights
+   - [x] Constant polling of session variables so that no user gets rights he does not have
    
 2. Administration
-   - Viewing team members
-   - Management of team members ( name change, role change)
+   - [x] Viewing team members
+   - [x] Management of team members ( name change, role change)
    - Create new users
    
 3. User
