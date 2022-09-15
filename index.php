@@ -70,9 +70,13 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
             <input class ="submit" type="submit" value="Login">
 
         </form>
-
+      <br>
+      <p align="center">  &copy; 2022 <a href="https://github.com/NequZ">NequZ</a> </p>
     </div>
 
 </body>
+
+<footer
+
 
 </html>
