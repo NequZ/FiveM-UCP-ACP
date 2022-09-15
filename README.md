@@ -46,6 +46,9 @@ import the cp_user SQL file
    - [ ] Viewing users
    - [ ] Edit users ( name, first name, inventory etc )
    - [ ] Possibility to modify database entries ( whitelist & ban )
+   - [ ] Create new Players in the Database
+   - [ ] Reset Data like Passwords ( When the Server use Passwords for Login for Example )
+   - [ ] Different Buttons for fast Options like : ( Reset Inventory, Reset Position )
    
 4. Other things
    - [ ] News system ( writing news and viewing news
