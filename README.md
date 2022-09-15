@@ -28,7 +28,7 @@ Go to: config/config.php and edit the variable $db
 
 import the cp_user SQL file
 
-#What should be possible with the ACP?
+# What should be possible with the ACP?
 
 1. General
    - [x] Login and logout function of users
@@ -40,7 +40,7 @@ import the cp_user SQL file
 2. Administration
    - [x] Viewing team members
    - [x] Management of team members ( name change, role change)
-   - Create new users
+   - [ ] Create new users
    
 3. User
    - [ ] Viewing users
@@ -51,3 +51,5 @@ import the cp_user SQL file
    - [ ] News system ( writing news and viewing news
    - [ ] Log system for reviewing
    - [ ] Frontend Updates ( I am so bad with that stuff :D )
+
+More Stuff is coming Soon
