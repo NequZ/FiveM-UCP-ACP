@@ -26,7 +26,8 @@ Go to: config/config.php and edit the variable $db
 
 ```$db = new PDO('mysql:host=localhost;dbname=fivem', 'root', ''); // Main Database String```
 
-import the cp_user SQL file
+import the ```cp_user``` SQL file
+import the ```cp_logfiles``` SQL file
 
 # What should be possible with the ACP?
 
