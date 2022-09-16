@@ -36,6 +36,19 @@ import the ```cp_logfiles``` SQL file
 
 ## Dont forget to select the fivem database for that step
 
+# Usage 
+
+## Language Variable
+
+I added the Possibility to add own Languages, i will add more variables. But for now i show you how it works
+
+You just need to change / add new Variables in the ```en.php``` and edit the code then to insert the variables. I will later add a context menu to change the languages on the website
+
+
+![Screenshot_29](https://user-images.githubusercontent.com/43492760/190622454-0e11368f-20d9-4489-bd5c-5c13e5a8d346.png)
+
+![Screenshot_30](https://user-images.githubusercontent.com/43492760/190622518-624bdfb8-95cb-4486-8907-6846332dda3e.png)
+
 
 # Here are some Pictures
 
