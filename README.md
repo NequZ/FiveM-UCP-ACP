@@ -34,6 +34,8 @@ import the ```cp_user``` SQL file
 
 import the ```cp_logfiles``` SQL file
 
+import the ```cp_news``` SQL file
+
 ## Dont forget to select the fivem database for that step
 
 # Usage 
