@@ -31,7 +31,7 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
 <ul class="menu">
     <li class="menu_list">
         <span class="front fa fa-user-circle"></span>
-        <a href="#" class="side">Player</a>
+        <a href="user/index.php" class="side">Player</a>
     </li>
     <li class="menu_list">
         <span class="front fa fa-users"></span>
