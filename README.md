@@ -58,6 +58,7 @@ import the ```cp_logfiles``` SQL file
    - [x] Different ranks like administrator and super administrator
    - [x] Security for logins without rights
    - [x] Constant polling of session variables so that no user gets rights he does not have
+   - [ ] Add Possibility to enable / disable 2FA Authentication
    
 2. Administration
    - [x] Viewing team members
