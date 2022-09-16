@@ -54,11 +54,15 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
         <a href="admin/log.php" class="side">Logfiles</a>
 </ul>';
     }
-    $query = $db->prepare("SELECT * FROM user");
-    $query->execute();
-    $result = $query->fetch(PDO::FETCH_ASSOC);
-    $count = $query->rowCount();
-    echo '<div class="dashboardwelcome">There are currently ' . $count . ' active Players in the database</div>';
+    if ($showplayers == "true") {
+
+
+        $query = $db->prepare("SELECT * FROM user");
+        $query->execute();
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+        $count = $query->rowCount();
+        echo '<div class="dashboardwelcome">There are currently ' . $count . ' active Players in the database</div>';
+    }
 ?>
 
 
