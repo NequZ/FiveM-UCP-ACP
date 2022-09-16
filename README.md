@@ -75,6 +75,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [x] Constant polling of session variables so that no user gets rights he does not have
    - [ ] Add Possibility to enable / disable 2FA Authentication
    - [x] Read News in the Dashboard
+   - [ ] More options in the config.php for administrating / editing the Interface, like show specific strings with infos etc
    
 2. Administration
    - [x] Viewing team members
