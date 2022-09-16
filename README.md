@@ -68,5 +68,10 @@ import the ```cp_logfiles``` SQL file
    - [x] Button for delete Rows
    - [ ] More Loggingoptions
 
+6. Language
+   - [ ] Language Folder so Owner can edit the Language Variables
+   - [ ] Possibility to switch the Language on click
+   - [ ] Config File Entry for Default Language
+
 
 More Stuff is coming Soon
