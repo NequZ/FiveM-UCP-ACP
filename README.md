@@ -7,6 +7,8 @@ And try to incorporate as much as possible in the V2.
 The code is much clearer.
 # I am not an application developer I teach myself everything. It will be 100% possible to make everything better and faster. If you have any ideas feel free to open a pull request.
 
+# Dont forget to backup your database before starting the Installation
+
 # Installation
 
 ## Prerequisites
@@ -24,11 +26,15 @@ Install it on the web server
 
 Go to: config/config.php and edit the variable $db
 
+Make sure you use the correct FiveM Database
+
 ```$db = new PDO('mysql:host=localhost;dbname=fivem', 'root', ''); // Main Database String```
 
 import the ```cp_user``` SQL file
 
 import the ```cp_logfiles``` SQL file
+
+## Dont forget to select the fivem database for that step
 
 # What should be possible with the ACP?
 
