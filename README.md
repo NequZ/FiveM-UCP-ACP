@@ -44,7 +44,7 @@ import the cp_user SQL file
    - [ ] Delete Team Members
    - [ ] Write News
    - [ ] Rolecheck, just a specific group is able to " Manage specific groups"
-   - [ ] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
+   - [x] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
 3. User
    - [ ] Viewing users
@@ -56,7 +56,15 @@ import the cp_user SQL file
    
 4. Other things
    - [ ] News system ( writing news and viewing news
-   - [ ] Log system for reviewing
+   - [x] Log system for reviewing
    - [ ] Frontend Updates ( I am so bad with that stuff :D )
+   
+5. Logging
+   - [x] Option in the config file for deactivate the Logging
+   - [x] Database Queries 
+   - [x] Logsite for Staff Members without Databaseaccess
+   - [x] Button for delete Rows
+   - [ ] More Loggingoptions
+
 
 More Stuff is coming Soon
