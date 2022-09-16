@@ -63,7 +63,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
 ![Screenshot_38](https://user-images.githubusercontent.com/43492760/190617592-504fa188-e3a8-4c6e-8d06-282d378b4fc9.png)
 ![Screenshot_39](https://user-images.githubusercontent.com/43492760/190617667-d6a1de32-54e6-4630-a518-6fa03093d9ea.png)
 ![Screenshot_40](https://user-images.githubusercontent.com/43492760/190617695-c83b2892-6c77-4711-842a-28ea4ca0858b.png)
-
+![Screenshot_31](https://user-images.githubusercontent.com/43492760/190652028-795b108f-90b5-405c-9838-74c7094c505a.png)
 
 # What should be possible with the ACP?
 
