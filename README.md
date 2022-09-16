@@ -34,6 +34,8 @@ import the ```cp_user``` SQL file
 
 import the ```cp_logfiles``` SQL file
 
+import the ```cp_news``` SQL file
+
 ## Dont forget to select the fivem database for that step
 
 # Usage 
@@ -61,7 +63,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
 ![Screenshot_38](https://user-images.githubusercontent.com/43492760/190617592-504fa188-e3a8-4c6e-8d06-282d378b4fc9.png)
 ![Screenshot_39](https://user-images.githubusercontent.com/43492760/190617667-d6a1de32-54e6-4630-a518-6fa03093d9ea.png)
 ![Screenshot_40](https://user-images.githubusercontent.com/43492760/190617695-c83b2892-6c77-4711-842a-28ea4ca0858b.png)
-
+![Screenshot_31](https://user-images.githubusercontent.com/43492760/190652028-795b108f-90b5-405c-9838-74c7094c505a.png)
 
 # What should be possible with the ACP?
 
@@ -72,13 +74,16 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [x] Security for logins without rights
    - [x] Constant polling of session variables so that no user gets rights he does not have
    - [ ] Add Possibility to enable / disable 2FA Authentication
+   - [x] Read News in the Dashboard
+   - [ ] More options in the config.php for administrating / editing the Interface, like show specific strings with infos etc
    
 2. Administration
    - [x] Viewing team members
    - [x] Management of team members ( name change, role change)
    - [x] Create new Team Members
    - [ ] Delete Team Members
-   - [ ] Write News
+   - [x] Write News over the Database
+   - [ ] Write News over the Website
    - [ ] Rolecheck, just a specific group is able to " Manage specific groups"
    - [x] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
