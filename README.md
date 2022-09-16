@@ -74,13 +74,15 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [x] Security for logins without rights
    - [x] Constant polling of session variables so that no user gets rights he does not have
    - [ ] Add Possibility to enable / disable 2FA Authentication
+   - [x] Read News in the Dashboard
    
 2. Administration
    - [x] Viewing team members
    - [x] Management of team members ( name change, role change)
    - [x] Create new Team Members
    - [ ] Delete Team Members
-   - [ ] Write News
+   - [x] Write News over the Database
+   - [ ] Write News over the Website
    - [ ] Rolecheck, just a specific group is able to " Manage specific groups"
    - [x] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
