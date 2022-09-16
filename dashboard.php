@@ -36,6 +36,7 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
     <li class="menu_list">
         <span class="front fa fa-users"></span>
         <a href="admin/admin.php" class="side">Staff</a>
+
     </li>
     <li class="menu_list">
         <span class="front fas fa-briefcase"></span>

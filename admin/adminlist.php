@@ -63,3 +63,20 @@ if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administr
         </tbody>
     </table>
 </div>
+
+<?php
+if ($logging == true ) {
+    $username = $_SESSION['username'];
+    $rank = $_SESSION['rank'];
+    $action = "User ($username) Viewed the Admin List";
+    $date = date("Y-m-d H:i:s");
+    $query = $db->prepare("INSERT INTO cp_logfiles (username, date, rank, action) VALUES (:username, :date, :rank, :action)");
+    $query->bindParam(':username', $username);
+    $query->bindParam(':date', $date);
+    $query->bindParam(':rank', $rank);
+    $query->bindParam(':action', $action);
+    $query->execute();
+
+
+}
+?>

@@ -34,9 +34,25 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         $_SESSION['password'] = $password;
         $_SESSION['rank'] = $rank;
         $_SESSION['loggedin'] = true;
-    } else {
+    }
+
+    if ($logging == true ) {
+        $action = "User ($username) logged in";
+        $date = date("Y-m-d H:i:s");
+        $query = $db->prepare("INSERT INTO cp_logfiles (username, date, rank, action) VALUES (:username, :date, :rank, :action)");
+        $query->bindParam(':username', $username);
+        $query->bindParam(':date', $date);
+        $query->bindParam(':rank', $rank);
+        $query->bindParam(':action', $action);
+        $query->execute();
+
+
+    }
+
+    else {
         header("Refresh:3; url='index.php'");
         echo '<div class="btn-danger">Login Failed</div>';
+
 
     }
 }
