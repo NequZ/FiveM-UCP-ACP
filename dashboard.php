@@ -26,6 +26,8 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
     <div class="dashboardwelcomeuser">
         <p style="text-align: center"> Welcome back<br><br> <?php echo $_SESSION['username']; ?> <br><br> Current Rank is <?php echo $_SESSION['rank'];?></p>
     </div>
+
+
 </head>
 <body>
 <ul class="menu">
@@ -40,13 +42,13 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
     </li>
     <li class="menu_list">
         <span class="front fas fa-briefcase"></span>
-        <a href="#" class="side">projects</a>
+        <a href="admin/news.php" class="side">News</a>
     </li>
     <li class="menu_list">
         <span class="front fas fa fa-times"></span>
         <a href="logout.php" class="side">Logout</a>
     </li>
-    <?php if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') {
+    <?php if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') { // You can change the Permission for Viewing the Logfiles here
     echo '<li class="menu_list">
         <span class="front fa fa-file-archive-o"></span>
         <a href="admin/log.php" class="side">Logfiles</a>

@@ -12,7 +12,7 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
 
 // check if rank is superadministrator or admin if not redirect to dashboard.php
 if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') {
-    echo '<div class="btn-info">You are logged in as ' . $_SESSION['username'] . '</div>';
+    echo '<div class="pass">You are logged in as ' . $_SESSION['username'] . '</div>';
 } else {
     header("Refresh:3; url='../dashboard.php'");
     echo '<div class="btn-danger">You do not have permission to view this page</div>';

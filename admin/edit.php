@@ -48,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     }
 }
+
 ?>
 
 <!doctype html>
@@ -88,17 +89,18 @@ $sth = $db->query($sql);
 
 // loop through the data and display it on the page
 while ($row = $sth->fetch()) {
-    echo '<body><form class="pass" action="edit.php?id=' . $id . '" method="post">';
-    echo ' <div class="main"> <p class="sign" align="center">Admin Login</p><div class="pass">';
-    echo '<div class="un">';
+    echo '<body><form class="" action="edit.php?id=' . $id . '" method="post">';
+    echo ' <div class=""> <p class="sign" align="center"></p><div class="pass">';
+    echo '<div class="">';
     echo '<label for="username">Username</label>';
     echo '<input type="text" id="username" name="username" class="form-control" value="' . $row['username'] . '">';
     echo '</div>';
-    echo '<div class="pass">';
+    echo '<div class="">';
     echo '<label for="rank">Rank</label>';
     echo '<input type="text" id="rank" name="rank" class="form-control" value="' . $row['rank'] . '">';
     echo '</div>';
-    echo '<input class="submit" type="submit" value="Update" class="btn btn-info">';
+    echo '<input class="pass" type="submit" value="Update" class="btn btn-info">';
+
     echo '</form> </div> </body>';
 }
 ?>

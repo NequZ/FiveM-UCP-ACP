@@ -1,7 +1,7 @@
 <?php
 include 'config/config.php';
 include 'css/style.css';
-
+include 'lang/en.php';
 session_start();
 
 
@@ -77,13 +77,13 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 
 <body>
   <div class="main">
-    <p class="sign" align="center">Admin Login</p>
+    <p class="sign" align="center"><?php echo $loginname;?></p> <!-- First Language Variable -->
 
 
         <form action="index.php" method="post">
             <input class="un" type="text" name="username" placeholder="Username">
             <input class="pass" type="password" name="password" placeholder="Password">
-            <input class ="submit" type="submit" value="Login">
+            <input class ="submit" type="submit" value=Login>
 
         </form>
       <br>
