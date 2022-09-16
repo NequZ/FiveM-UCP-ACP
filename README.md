@@ -49,9 +49,9 @@ import the ```cp_logfiles``` SQL file
    - [x] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
 3. User
-   - [ ] Viewing users
-   - [ ] Edit users ( name, first name, inventory etc )
-   - [ ] Possibility to modify database entries ( whitelist & ban )
+   - [x] Viewing users
+   - [x] Edit users ( name, first name, inventory etc )
+   - [x] Possibility to modify database entries ( whitelist & ban )
    - [ ] Create new Players in the Database
    - [ ] Reset Data like Passwords ( When the Server use Passwords for Login for Example )
    - [ ] Different Buttons for fast Options like : ( Reset Inventory, Reset Position )
