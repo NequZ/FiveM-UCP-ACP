@@ -109,7 +109,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
 
 6. Language
    - [ ] Language Folder so Owner can edit the Language Variables
-   - [ ] Possibility to switch the Language on click
+   - [ ] Possibility to switch the Language on click ( Context Menu )
    - [ ] Config File Entry for Default Language
    
 7. Ticketsystem for Users & Staff Members
@@ -117,6 +117,6 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [ ] Page for Staff Members to see created Tickets
    - [ ] No Login required for Users, maybe a Contact Formular for Discord / Forum
    - [ ] Different Ticket Departements ( 1st, 2nd, 3rd for example )
-
+   - [ ] Possibility to transfer Tickets to other Departements
 
 More Stuff is coming Soon
