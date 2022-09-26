@@ -113,10 +113,12 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [ ] Config File Entry for Default Language
    
 7. Ticketsystem for Users & Staff Members
-   - [ ] Ticketpage for Users to create a Ticket 
+   - [x] Ticketpage for Users to create a Ticket 
    - [ ] Page for Staff Members to see created Tickets
-   - [ ] No Login required for Users, maybe a Contact Formular for Discord / Forum
+   - [x] No Login required for Users, maybe a Contact Formular for Discord / Forum
    - [ ] Different Ticket Departements ( 1st, 2nd, 3rd for example )
    - [ ] Possibility to transfer Tickets to other Departements
+   - [ ] Ticketoverview for User
+   - [ ] Ticket Comments Overview for User
 
 More Stuff is coming Soon
