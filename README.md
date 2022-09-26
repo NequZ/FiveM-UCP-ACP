@@ -118,7 +118,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [x] No Login required for Users, maybe a Contact Formular for Discord / Forum
    - [ ] Different Ticket Departements ( 1st, 2nd, 3rd for example )
    - [ ] Possibility to transfer Tickets to other Departements
-   - [ ] Ticketoverview for User
-   - [ ] Ticket Comments Overview for User
+   - [x] Ticketoverview for User
+   - [x] Ticket Comments Overview for User
 
 More Stuff is coming Soon
