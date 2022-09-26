@@ -83,7 +83,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [x] Create new Team Members
    - [ ] Delete Team Members
    - [x] Write News over the Database
-   - [ ] Write News over the Website
+   - [x] Write News over the Website
    - [ ] Rolecheck, just a specific group is able to " Manage specific groups"
    - [x] Own Navbar Option for Logs, so its possible that Persons who arent able to access the Logs on the Webserver check Logfiles
    
@@ -96,7 +96,7 @@ You just need to change / add new Variables in the ```en.php``` and edit the cod
    - [ ] Different Buttons for fast Options like : ( Reset Inventory, Reset Position )
    
 4. Other things
-   - [ ] News system ( writing news and viewing news
+   - [x] News system ( writing news and viewing news
    - [x] Log system for reviewing
    - [ ] Frontend Updates ( I am so bad with that stuff :D )
    
