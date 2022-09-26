@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 16. Sep 2022 um 09:37
+-- Erstellungszeit: 26. Sep 2022 um 08:36
 -- Server-Version: 10.4.24-MariaDB
 -- PHP-Version: 7.4.29
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cp_logfiles` (
   `id` int(11) NOT NULL,
   `username` varchar(1000) NOT NULL,
-  `date` date NOT NULL,
+  `date` datetime NOT NULL,
   `rank` varchar(1000) NOT NULL,
   `action` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -55,7 +55,7 @@ ALTER TABLE `cp_logfiles`
 -- AUTO_INCREMENT für Tabelle `cp_logfiles`
 --
 ALTER TABLE `cp_logfiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
