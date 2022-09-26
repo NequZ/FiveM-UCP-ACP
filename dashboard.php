@@ -36,6 +36,10 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
         <a href="user/index.php" class="side">Player</a>
     </li>
     <li class="menu_list">
+        <span class="front fa fa-check"></span>
+        <a href="admin/ticketoverview.php" class="side">Tickets</a>
+    </li>
+    <li class="menu_list">
         <span class="front fa fa-users"></span>
         <a href="admin/admin.php" class="side">Staff</a>
 
