@@ -88,6 +88,8 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         </form>
       <br>
       <p align="center">  &copy; 2022 <a href="https://github.com/NequZ">NequZ</a> </p>
+      <br>
+      <p align="center">  <a href="/ticket.php">Create Support Ticket</a> </p>
     </div>
 
 </body>
