@@ -27,7 +27,14 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
         <span class="front fas fa fa-times"></span>
         <a href="../dashboard.php" class="side">Back</a>
     </li>
-    <?php if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') { // You can change the Permission for Creating new News here
+    <?php
+    if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') {
+        echo '<li class="menu_list">
+        <span class="front fa fa fa-code"></span>
+        <a href="managenews.php" class="side">Manage News</a>
+    </li>';
+    }
+    if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') { // You can change the Permission for Creating new News here
     echo '<li class="menu_list">
         <span class="front fa fa-file-archive-o"></span>
         <a href="createnews.php" class="side">Create News</a>

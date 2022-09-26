@@ -44,17 +44,17 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
         <span class="front fas fa-briefcase"></span>
         <a href="admin/news.php" class="side">News</a>
     </li>
-    <li class="menu_list">
-        <span class="front fas fa fa-times"></span>
-        <a href="logout.php" class="side">Logout</a>
-    </li>
     <?php if ($_SESSION['rank'] == 'Superadministrator' || $_SESSION['rank'] == 'Administrator') { // You can change the Permission for Viewing the Logfiles here
     echo '<li class="menu_list">
         <span class="front fa fa-file-archive-o"></span>
         <a href="admin/log.php" class="side">Logfiles</a>
 </ul>';
-    }
-    if ($showplayers == "true") {
+    } ?>
+    <li class="menu_list">
+        <span class="front fas fa fa-times"></span>
+        <a href="logout.php" class="side">Logout</a>
+    </li>
+    <?php if ($showplayers == "true") {
 
 
         $query = $db->prepare("SELECT * FROM user");
