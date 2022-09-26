@@ -29,6 +29,21 @@ if (isset($_POST['comment'])) {
     header("Location: currentticket.php?id=$ticket_id");
 }
 
+if (isset($_POST['close'])) {
+    $sql = "UPDATE cp_ticket SET open = 1 WHERE id = $ticket_id";
+    $db->exec($sql);
+    header("Location: currentticket.php?id=$ticket_id");
+    $sql = "INSERT INTO cp_ticket_comments (ticket_id, message, creator, created) VALUES ('$ticket_id', 'Ticket closed by User', 'System', NOW())";
+    $db->exec($sql);
+}
+
+if (isset($_POST['open'])) {
+    $sql = "UPDATE cp_ticket SET open = 0 WHERE id = $ticket_id";
+    $db->exec($sql);
+    header("Location: currentticket.php?id=$ticket_id");
+    $sql = "INSERT INTO cp_ticket_comments (ticket_id, message, creator, created) VALUES ('$ticket_id', 'Ticket has been reopened', 'System', NOW())";
+    $db->exec($sql);
+}
 
 
 ?>
@@ -73,6 +88,13 @@ if (isset($_POST['comment'])) {
                                     <ul class="list-unstyled">
                                         <br><br><br>
                                         <li><i class="fa fa-building"></i> Status: <?php echo $open; ?></li>
+                                        <form method="post">
+                                            <input type="hidden" name="id" value="<?php echo $ticket_id; ?>"><br>
+                                            <input type="submit" name="close" value="Close Ticket" class="btn btn-danger">
+                                            <?php if ($open == "Closed") { ?>
+                                                <input type="submit" name="open" value="Open Ticket" class="btn btn-success">
+                                            <?php } ?>
+                                        </form>
                                     </ul>
 
 
@@ -106,23 +128,27 @@ if (isset($_POST['comment'])) {
                                                     <li><i class='fa fa-pencil-square'></i> Comment postet: $comment_date</li>
                                                     <li><i class='fa fa-address-book'></i> From: $comment_username</li>
                                                 </ul>
-                                            </div>
-                                    </div>
+                   
+                                         </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  
+            </div>       
+    </div>  
+                            
                 ";
             }
             ?>
-
+<?php if ($open == "Open") { ?>
         <form method="post">
             <div class="form-group">
                 <label for="comment">Comment:</label>
                 <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
             </div>
             <button type="comment" class="btn btn-lg btn-info btn-block">Comment</button>
-
+            <?php } ?>
+        </form>
 </div>
 
