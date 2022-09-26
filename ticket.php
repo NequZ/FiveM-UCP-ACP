@@ -80,10 +80,10 @@ if (isset($_POST['openticket'])) {
               </fieldset>
                 <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-success btn-block">
             </form>
-              <br>
+              <br><br>
               <form action="ticket.php" method="post">
-                <input type="text" name="id" placeholder="Ticket ID">
-                  <input type="text" name="username" placeholder="Username">
+                <input type="text" class="form-control" name="id" placeholder="Ticket ID"><br>
+                  <input type="text" class="form-control" name="username" placeholder="Username"><br>
                 <input type="submit" name="openticket" value="Open Ticket" class="btn btn-lg btn-info btn-block">
               </form>
             </div>
