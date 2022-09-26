@@ -78,7 +78,7 @@ if (isset($_POST['submit'])) {
                     <form action="newadmin.php" method="post">
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                            <input type="text" name="username" class="form-control"  id="username" placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>

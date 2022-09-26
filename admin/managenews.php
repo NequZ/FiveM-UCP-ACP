@@ -87,7 +87,7 @@ echo '<div class="j">';
     echo '<p>' . $row['id'] . '</p>';
     echo '<form method="post" action="managenews.php">';
     echo '<input type="hidden" name="delete" value="' . $row['id'] . '">';
-    echo '<input type="submit" value="Delete" class="btn-danger">';
+    echo '<input type="submit" value="Delete" class="btn btn-lg btn-info btn-block">';
     echo '</form>';
     echo '</div>';
 }

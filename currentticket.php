@@ -22,6 +22,12 @@ if ($open == 1) {
 
 
 
+if (isset($_POST['comment'])) {
+    $comment = $_POST['comment'];
+    $sql = "INSERT INTO cp_ticket_comments (ticket_id, message, creator, created) VALUES ('$ticket_id', '$comment', 'User', NOW())";
+    $db->exec($sql);
+    header("Location: currentticket.php?id=$ticket_id");
+}
 
 
 
@@ -75,6 +81,7 @@ if ($open == 1) {
                 </div>
             </div>
         </div>
+
     </div>
             <?php
             $sql = "SELECT * FROM cp_ticket_comments WHERE ticket_id = $ticket_id";
@@ -96,7 +103,7 @@ if ($open == 1) {
                                             <div class='left col-xs-7'>
                                                 <ul class='list-unstyled'>
                                                     <br><br><br>
-                                                    <li><i class='fa fa-building'></i> Comment postet: $comment_date</li>
+                                                    <li><i class='fa fa-pencil-square'></i> Comment postet: $comment_date</li>
                                                     <li><i class='fa fa-address-book'></i> From: $comment_username</li>
                                                 </ul>
                                             </div>
@@ -110,6 +117,12 @@ if ($open == 1) {
             }
             ?>
 
-</div>
+        <form method="post">
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+            </div>
+            <button type="comment" class="btn btn-lg btn-info btn-block">Comment</button>
 
+</div>
 
